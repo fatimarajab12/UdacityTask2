@@ -1,0 +1,102 @@
+@use '../utils/variables' as var;
+@use '../utils/mixins';
+
+.about-me {
+  max-width: 800px;
+  margin: 4rem auto 6rem;
+  padding: 0 1rem;
+  font-family: var.$font-stack, Tahoma, Geneva, Verdana, sans-serif;
+  color: var.$primary-color;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: darken(var.$primary-color, 15%);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+
+  &__description {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    color: lighten(var.$primary-color, 20%);
+    text-align: justify;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__skills {
+    background-color: var.$light-bg;
+    padding: 2rem 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__skills-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    color: var.$primary-color;
+    text-align: center;
+  }
+
+  &__skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  &__skill {
+    background: linear-gradient(
+      135deg,
+      var.$primary-color,
+      var.$accent-color
+    );
+    color: white;
+    padding: 0.5rem 1.4rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 3px 8px rgba(
+      red(var.$accent-color),
+      green(var.$accent-color),
+      blue(var.$accent-color),
+      0.5
+    );
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    user-select: none;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(
+        red(var.$accent-color),
+        green(var.$accent-color),
+        blue(var.$accent-color),
+        0.7
+      );
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__description {
+      font-size: 1rem;
+    }
+    &__skills-list {
+      justify-content: center;
+    }
+    &__skill {
+      font-size: 0.9rem;
+      padding: 0.4rem 1.2rem;
+    }
+  }
+}

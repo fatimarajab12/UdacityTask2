@@ -1,0 +1,13 @@
+// _footer.scss
+@use '../utils/variables';
+
+.footer {
+  background-color: variables.$primary-color;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+  &__text {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,75 @@
+@use '../utils/variables' as var;
+
+.intro-banner {
+  background-color: transparent; 
+  color: var.$primary-color; 
+  padding: 6rem 1.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    max-width: 700px;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05em;
+    color: var.$primary-color;
+    text-shadow: none; 
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+    color: var.$accent-color;
+    text-shadow: none;
+  }
+
+  &__cta {
+    background-color: var.$accent-color;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 0.75rem 2.2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.4);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-color: darken(var.$accent-color, 10%);
+      color: white;
+      outline: none;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(230, 126, 34, 0.7);
+    }
+
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(230, 126, 34, 0.5);
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 4rem 1rem;
+
+    &__title {
+      font-size: 2.5rem;
+    }
+
+    &__subtitle {
+      font-size: 1.1rem;
+    }
+
+    &__cta {
+      padding: 0.6rem 1.6rem;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Project showcasing the latest work and about Fatima Ahmad" />
+  <title>Fatima Ahmad Portfolio</title>
+  <link rel="stylesheet" href="scss/main.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <div class="header__logo">Fatima Ahmad</div>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__menu">
+          <li class="header__item"><a href="#" class="header__link">Home</a></li>
+          <li class="header__item"><a href="#about" class="header__link">About Me</a></li>
+          <li class="header__item"><a href="#projects" class="header__link">Projects</a></li>
+          <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro Banner -->
+ <section class="intro-banner">
+  <div class="intro-banner__content">
+    <h1 class="intro-banner__title">Welcome to My Portfolio</h1>
+    <p class="intro-banner__subtitle">Creative solutions for your digital needs.</p>
+    <a href="#projects" class="intro-banner__cta" role="button">View Projects</a>
+  </div>
+</section>
+
+
+ <section class="about-me" id="about">
+  <h2 class="about-me__title">About Me</h2>
+  <p class="about-me__description">
+    Hi, I'm Fatima Ahmad. I'm a front-end developer who enjoys turning ideas into clean, functional websites.  
+    I focus on writing maintainable code using SCSS and following the BEM methodology to keep projects organized and scalable.  
+    I have strong skills in HTML5, CSS3, JavaScript, and I'm comfortable using Git and VSCode.  
+    I’m always eager to learn new technologies and improve my skills, especially in making websites accessible and responsive across all devices.  
+    With a background in computer engineering, I combine technical knowledge with creativity to build useful digital experiences.  
+    I have contributed to several projects, including an interactive portfolio website and a UI design system.  
+    My goal is to become a professional front-end developer who delivers high-quality user experiences.  
+    When I’m not coding, I love exploring design trends and experimenting with UI/UX concepts to make interfaces that users enjoy.  
+    I'm also a team player who values clear communication and effective time management.
+  </p>
+
+  <div class="about-me__skills">
+    <h3 class="about-me__skills-title">Skills</h3>
+    <ul class="about-me__skills-list">
+      <li class="about-me__skill">HTML5</li>
+      <li class="about-me__skill">CSS3 / SCSS</li>
+      <li class="about-me__skill">JavaScript (ES6+)</li>
+      <li class="about-me__skill">BEM Methodology</li>
+      <li class="about-me__skill">Responsive Design</li>
+      <li class="about-me__skill">Accessibility (WCAG)</li>
+      <li class="about-me__skill">Git & Version Control</li>
+      <li class="about-me__skill">VSCode</li>
+      <li class="about-me__skill">UI/UX Principles</li>
+    </ul>
+  </div>
+</section>
+
+
+  
+ <!-- Latest Projects -->
+<section class="projects" id="projects">
+  <h2 class="projects__title">Latest Projects</h2>
+  <div class="projects__list">
+    <article class="projects__item">
+      <h3 class="projects__name">Portfolio Website</h3>
+      <p class="projects__description">
+        A responsive personal website to showcase my skills and projects. Built using SCSS, BEM, and accessibility-first design principles.  
+        It features a clean design, smooth animations, and is fully responsive on all devices.
+      </p>
+      <a href="https://yourportfolio.link" class="projects__link" target="_blank" rel="noopener">View Project</a>
+    </article>
+
+    <article class="projects__item">
+      <h3 class="projects__name">UI/UX Design System</h3>
+      <p class="projects__description">
+        Developed a consistent UI kit with reusable components for scalable web applications, utilizing SCSS mixins and variables.
+        The system helps teams maintain design consistency and speeds up development.
+      </p>
+      <a href="https://github.com/yourusername/design-system" class="projects__link" target="_blank" rel="noopener">View Project</a>
+    </article>
+
+    <article class="projects__item">
+      <h3 class="projects__name">Accessibility Audit Tool</h3>
+      <p class="projects__description">
+        Created a prototype tool to analyze HTML pages for WCAG compliance issues, promoting inclusive web design practices.
+        The tool highlights accessibility errors and suggests fixes.
+      </p>
+      <a href="https://github.com/yourusername/accessibility-tool" class="projects__link" target="_blank" rel="noopener">View Project</a>
+    </article>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2 class="contact__title">Get in Touch</h2>
+    <p class="contact__description">Have a question or want to work together? Send me a message!</p>
+    
+    <form action="#" method="POST" class="contact__form" aria-label="Contact form">
+      <label for="name" class="contact__label">Name</label>
+      <input type="text" id="name" name="name" class="contact__input" required placeholder="Your full name" />
+
+      <label for="email" class="contact__label">Email</label>
+      <input type="email" id="email" name="email" class="contact__input" required placeholder="Your email address" />
+
+      <label for="message" class="contact__label">Message</label>
+      <textarea id="message" name="message" class="contact__textarea" required placeholder="Write your message here"></textarea>
+
+      <button type="submit" class="contact__button">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Fatima Ahmad. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JS for sticky header -->
+  <script>
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('header--scrolled');
+      } else {
+        header.classList.remove('header--scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

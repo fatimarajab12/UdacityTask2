@@ -1,0 +1,45 @@
+// _header.scss
+@use '../utils//variables';
+@use '../utils/mixins';
+
+.header {
+  background-color: variables.$primary-color;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: variables.$transition;
+
+  &__container {
+    @include mixins.flex-center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    transition: variables.$transition;
+
+    &:hover {
+      color: variables.$accent-color;
+    }
+  }
+
+  &--scrolled {
+    padding: 0.5rem 2rem;
+    background-color: darken(variables.$primary-color, 10%);
+  }
+}
