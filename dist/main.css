@@ -33,7 +33,7 @@
 }
 .header--scrolled {
   padding: 0.5rem 2rem;
-  background-color: #1a252f;
+  background-color: rgb(25.9032258065, 36.5, 47.0967741935);
 }
 
 .intro-banner {
@@ -75,7 +75,7 @@
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 .intro-banner__cta:hover, .intro-banner__cta:focus {
-  background-color: #bf6516;
+  background-color: rgb(191.3536585366, 101.3048780488, 21.6463414634);
   color: white;
   outline: none;
   transform: translateY(-3px);
@@ -146,8 +146,7 @@
 .projects__image {
   width: 100%;
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .projects__name {
   font-size: 1.5rem;
@@ -173,7 +172,7 @@
   transition: background-color 0.3s ease;
 }
 .projects__link:hover {
-  background-color: #b66015;
+  background-color: rgb(182.1902439024, 96.4536585366, 20.6097560976);
 }
 
 .footer {
@@ -196,7 +195,7 @@
 .about-me__title {
   font-size: 3rem;
   font-weight: 700;
-  color: #11181f;
+  color: rgb(16.8548387097, 23.75, 30.6451612903);
   margin-bottom: 1.5rem;
   text-align: center;
   letter-spacing: 0.05em;
@@ -205,7 +204,7 @@
   font-size: 1.15rem;
   line-height: 1.7;
   margin-bottom: 3rem;
-  color: #507192;
+  color: rgb(80.1935483871, 113, 145.8064516129);
   text-align: justify;
   max-width: 720px;
   margin-left: auto;
@@ -245,9 +244,7 @@
   box-shadow: 0 3px 8px rgba(230, 126, 34, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 .about-me__skill:hover {
   transform: translateY(-6px);
@@ -325,7 +322,7 @@
   transition: background-color 0.3s ease;
 }
 .contact__button:hover {
-  background-color: #bf6516;
+  background-color: rgb(191.3536585366, 101.3048780488, 21.6463414634);
 }
 @media (max-width: 768px) {
   .contact {
@@ -350,4 +347,6 @@
   .contact__description {
     font-size: 0.95rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
